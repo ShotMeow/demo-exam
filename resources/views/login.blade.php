@@ -1,6 +1,6 @@
 @extends('layouts.index')
 
-@section('content', 'Copy Star - Авторизация')
+@section('title', 'Copy Star - Авторизация')
 
 @section('content')
 
