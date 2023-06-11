@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +26,11 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('admin');
 });
+
+Route::post('/admin', [AdminController::class, 'login']); // Вход в админ-панель
+
+Route::post('/category', [CategoryController::class, 'store']); // Создать категорию
+Route::post('/category/{categoryId}', [CategoryController::class, 'destroy']); // Удалить категорию
 
 // Корзина
 
