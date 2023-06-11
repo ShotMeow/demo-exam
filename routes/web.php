@@ -13,6 +13,61 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Главная страница
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+// Админ-панель
+
+Route::get('/admin', function () {
+    return view('admin');
+});
+
+// Корзина
+
+Route::get('/cart', function () {
+    return view('cart');
+});
+
+// Каталог
+
+Route::get('/catalog', function () {
+    return view('catalog');
+});
+
+// Авторизация
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+// Заказы
+
+Route::get('/order', function () {
+    return view('order');
+});
+
+// Продукт
+
+Route::get('/product', function () {
+    return view('product');
+});
+
+// Регистрация
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+// Где нас найти
+
+Route::get('/where-are', function () {
+    return view('where-are');
+});
+
+
+
+
+
